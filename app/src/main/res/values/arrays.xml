@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="team_imgs">
+        <item>@drawable/atlanta_hawks</item>
+        <item>@drawable/boston_celtics</item>
+        <item>@drawable/charlotte_bobcats</item>
+        <item>@drawable/chicago_bulls</item>
+        <item>@drawable/cleveland_cavaliers</item>
+        <item>@drawable/dallas_mavericks</item>
+        <item>@drawable/denver_nuggets</item>
+        <item>@drawable/detroit_pistons</item>
+        <item>@drawable/golden_state_warriors</item>
+        <item>@drawable/houston_rockets</item>
+        <item>@drawable/indiana_pacers</item>
+        <item>@drawable/la_clippers</item>
+        <item>@drawable/la_lakers</item>
+        <item>@drawable/memphis_grizzlies</item>
+        <item>@drawable/miami_heat</item>
+        <item>@drawable/milwaukee_bucks</item>
+        <item>@drawable/minnesota_timberwolves</item>
+        <item>@drawable/new_jersey_nets</item>
+        <item>@drawable/new_orleans_hornets</item>
+        <item>@drawable/new_york_knicks</item>
+        <item>@drawable/oklahoma_city_thunder</item>
+        <item>@drawable/orlando_magic</item>
+        <item>@drawable/philadelphia_sixers</item>
+        <item>@drawable/phoenix_suns</item>
+        <item>@drawable/portland_trail_blazers</item>
+        <item>@drawable/sacramento_kings</item>
+        <item>@drawable/san_antonio_spurs</item>
+        <item>@drawable/toronto_raptors</item>
+        <item>@drawable/utah_jazz</item>
+        <item>@drawable/washington_wizards</item>
+
+
+    </integer-array>
+
+</resources>

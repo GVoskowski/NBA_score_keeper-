@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">NBA Score Keeper</string>
+    <string name="teamA_prompt">Choose Team A</string>
+    <string name="teamB_prompt">Choose Team B</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="free_throw">Free Throw</string>
+    <string name="_2_points">+2 Points</string>
+    <string name="_3_points">+3 Points</string>
+    <string name="reset">Reset</string>
+    <string name="match_end">Match End</string>
+    <string name="WIN_RESULT_A">THE HOME TEAM A!!</string>
+    <string name="WIN_RESULT_B">THE AWAY TEAM B!!</string>
+    <string name="DRAW">IT\'S A DRAW!!</string>
+    <string name="dismiss">Dismiss</string>
+
+
+    <string-array name="choose_team">
+        <item>Atlanta Hawks</item>
+        <item>Boston Celtics</item>
+        <item>Charlotte Bobcats</item>
+        <item>Chicago Bulls</item>
+        <item>Cleveland Cavaliers</item>
+        <item>Dallas Mavericks</item>
+        <item>Denver Nuggets</item>
+        <item>Detroit Pistons</item>
+        <item>Golden State Warriors</item>
+        <item>Houston Rockets</item>
+        <item>Indiana Pacers</item>
+        <item>LA Clippers</item>
+        <item>LA Lakers</item>
+        <item>Memphis Grizzlies</item>
+        <item>Miami Heat</item>
+        <item>Milwaukee Bucks</item>
+        <item>Minnesota Timberwolves</item>
+        <item>New Jersey Nets</item>
+        <item>New Orleans Hornets</item>
+        <item>New York Knicks</item>
+        <item>Oklahoma City Thunder</item>
+        <item>Orlando Magic</item>
+        <item>Philadelphia Sixers</item>
+        <item>Phoenix Suns</item>
+        <item>Portland Trail Blazers</item>
+        <item>Sacramento Kings</item>
+        <item>San Antonio Spurs</item>
+        <item>Toronto Raptors</item>
+        <item>Utah Jazz</item>
+        <item>Washington Wizards</item>
+    </string-array>
+</resources>

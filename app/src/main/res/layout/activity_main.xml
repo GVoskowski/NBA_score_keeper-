@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/IVdm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_banner"
+            tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            style="@style/Custom_ver"
+            android:layout_below="@id/top_banner"
+            android:layout_gravity="fill_vertical">
+            <!--Spinner Layout Start -->
+            <LinearLayout style="@style/Custom_hor">
+
+                <Spinner
+
+                    android:id="@+id/spinnerA"
+                    style="@style/Custom_spin"
+                    android:entries="@array/choose_team"
+                    android:prompt="@string/teamA_prompt"/>
+
+
+                <Spinner
+                    android:id="@+id/spinnerB"
+                    style="@style/Custom_spin"
+                    android:entries="@array/choose_team"
+                    android:prompt="@string/teamB_prompt"/>
+
+            </LinearLayout>
+            <!--Spinner Layout End -->
+
+            <!--Home/Away Layout -->
+            <LinearLayout
+                style="@style/Custom_hor"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp12">
+
+                <TextView
+
+                    style="@style/txtviewh_w"
+                    android:text="@string/home"
+                    android:textColor="#026bb7"/>
+
+                <TextView
+                    style="@style/txtviewh_w"
+                    android:text="@string/away"
+                    android:textColor="#ed0c39"/>
+
+
+            </LinearLayout>
+
+            <!--Team Image Layout Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/llhei"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageA"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp200"
+                    android:layout_weight="1"
+                    android:src="@drawable/sample_a"
+                    app:civ_border_color="#026bb7"
+                    app:civ_border_width="@dimen/dp2"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageB"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp200"
+                    android:layout_weight="1"
+                    android:src="@drawable/sample_b"
+                    app:civ_border_color="#ed0c39"
+                    app:civ_border_width="@dimen/dp2"/>
+
+            </LinearLayout>
+            <!--Team Image Layout End -->
+
+            <!--Team Score Layout Start -->
+            <LinearLayout
+
+                style="@style/Custom_hor">
+
+                <TextView
+                    android:id="@+id/scoreTeamA"
+                    style="@style/scores"
+                    android:textColor="#026bb7"/>
+
+                <TextView
+                    android:id="@+id/scoreTeamB"
+                    style="@style/scores"
+                    android:textColor="#ed0c39"/>
+
+            </LinearLayout>
+            <!--Team Score Layout End -->
+
+            <!-- Score Buttons Layout Start-->
+            <LinearLayout
+                android:id="@+id/score_layout"
+                style="@style/Custom_hor"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/Apnts3_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape1"
+                        android:onClick="addThreeForTeamA"
+                        android:text="@string/_3_points"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/Apnts2_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape1"
+                        android:onClick="addTwoForTeamA"
+                        android:text="@string/_2_points"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/Apnts1_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape1"
+                        android:onClick="addOneForTeamA"
+                        android:text="@string/free_throw"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/Bpnts3_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape2"
+                        android:onClick="addThreeForTeamB"
+                        android:text="@string/_3_points"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/Bpnts2_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape2"
+                        android:onClick="addTwoForTeamB"
+                        android:text="@string/_2_points"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/Bpnts1_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:background="@drawable/buttonshape2"
+                        android:onClick="addOneForTeamB"
+                        android:text="@string/free_throw"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--Score Buttons Layout End -->
+
+
+        </LinearLayout>
+        <!-- Reset Button-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mrgntop"
+            android:background="@drawable/buttonshape1"
+            android:onClick="resetScore"
+            android:text="@string/reset"
+            android:textColor="#ffffff"/>
+        <!--Reset Button -->
+        <Button
+            android:id="@+id/winner_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp3"
+            android:background="@drawable/buttonshape1"
+            android:text="@string/match_end"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+</ScrollView>
